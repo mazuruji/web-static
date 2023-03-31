@@ -1,61 +1,43 @@
-body {
-    margin: 0;
-  }
-  
-  nav>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  nav>ul>li {
-    float: left;
-  }
-  
-  nav>ul>li>a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav>ul>li a:hover {
-    background-color: #111;
-  }
-  
-  .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  }
-  
-  @media (min-width: 576px) {
-    .grid-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .grid-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h2 {
+  margin-top: 0;
+}
+
+.product p {
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-weight: bold;
+}
